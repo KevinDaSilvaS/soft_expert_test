@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta Tipo="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <header class="z-depth-2">
+        <nav class="blue">
+        </nav>
+    </header>
+
+    <div id="main" class="row content">
+        <div id="register" class=" col s2 m2 l2">
+            <ul>
+                <li><a href="ProductType.html">Cadastro de Tipo e Percentual</a></li>
+                <li><a href="AddProduct.php">Cadastro de Produtos</a></li>
+                <li><a href="Purchases.php">Vendas</a></li>
+            </ul>
+        </div>
+        <div id="register" class=" col s10 m10 l10">
+            <div class="card white">
+                <div id="slide-register hide"></div>
+                
+                <div id="form-register" class="card-content ">
+                    <div class="card-title">Cadastro de Tipo de Produto</div>
+
+                    <form class="row" id="reg" action="insertProductType.php" method="POST" enctype="multipart/form-data">
+                        
+                        <div class="input-field col s6 ">
+                            <input type="text" name="type" id="type" placeholder="Ex: Limpeza" required>
+                            <label for="type">Tipo</label>
+                        </div>
+
+                        <div class="input-field col s6 ">
+                            <input type="text" name="percent_tax" onkeyup="processPercent(this.value)" 
+                            placeholder="Ex: 33,22" id="percent_tax" required>
+                            <label for="percent_tax">Percentual de Impostos</label>
+                        </div>
+
+                        <div class="input-field col s12 ">
+                            <button class="btn norwegian-red">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        function processPercent(valInput) {
+
+            if (isNaN(valInput[valInput.length - 1]) && valInput[valInput.length - 1] != ",") {
+
+                valInput = valInput.replace(valInput[valInput.length - 1], "");
+                document.getElementById("percent_tax").value = valInput;
+                return;
+            }
+            
+            return;
+        }
+    </script>
+</body>
+</html>
