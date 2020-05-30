@@ -11,3 +11,11 @@ test done for the php developer role at soft expert
 
 <h3>Estrutura do banco:</h3>
 <img src="https://github.com/KevinDaSilvaS/soft_expert_test/blob/master/db_structure.png" />
+
+<h3>Scrrenshots da Solução:</h3>
+<h6>Cadastro de tipo de produtos e percentuais de impostos</h6>
+<img src="https://github.com/KevinDaSilvaS/soft_expert_test/blob/master/solution_screenshots/types_and_percent.png" />
+<h6>Cadastro de Produtos</h6>
+<img src="https://github.com/KevinDaSilvaS/soft_expert_test/blob/master/solution_screenshots/product_insertion.png" />
+<h6>Tela de vendas</h6>
+<img src="https://github.com/KevinDaSilvaS/soft_expert_test/blob/master/solution_screenshots/sales.png" />
