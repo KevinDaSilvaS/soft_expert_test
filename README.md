@@ -8,3 +8,6 @@ test done for the php developer role at soft expert
   <li>Para o gerencimento do banco foi utilizado as funções nativas do PDO em php</li>
   <li>Na tela de vendas foi utilizado AJAX para criar um frontend mais interativo e que consumisse menos recursos</li>
 </ul>
+
+<h3>Estrutura do banco:</h3>
+<img src="https://github.com/KevinDaSilvaS/soft_expert_test/blob/master/db_structure.png" />
