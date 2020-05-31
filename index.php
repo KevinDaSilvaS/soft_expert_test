@@ -1,5 +1,5 @@
 <?php
 
 
-header('Location: ProductType.html.php');
+header('Location: ProductType.html');
 ?>
